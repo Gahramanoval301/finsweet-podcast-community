@@ -4,13 +4,25 @@
 
 @layer base{
 .ul-items{
-  @apply flex gap-3 sm:gap-5 md:gap-8 xl:gap-12
+  @apply flex gap-3 sm:gap-3 md:gap-5 xl:gap-12
 }
 .dropdown-item{
   @apply hover:bg-common-light py-2 tracking-wide
 }
 footer *{
   @apply text-white
+}
+.logo-list{
+  @apply flex flex-col gap-1 min-[500px]:gap-2
+}
+.footer-header{
+  @apply mb-3 font-bold
+}
+.logo-list img{
+  @apply max-[500px]:w-6
+}
+.logo-list a{
+  @apply opacity-85 max-[500px]:text-xs
 }
 }
 @layer utilities {
