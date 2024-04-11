@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="container mx-auto">
+        <div className="">
           <Header />
         </div>
-        <main className="container mx-auto translate-y-20 border-2 border-blue-700 px-4 relative z-10">
+        <main className=" translate-y-20 border-2 border-blue-700 px-4 relative z-10">
           {children}
         </main>
         <Footer />
