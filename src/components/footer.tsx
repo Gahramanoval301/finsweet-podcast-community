@@ -5,13 +5,9 @@ import { navLinks } from '../data/navLinks'
 import Link from 'next/link'
 
 export default function Footer() {
-    type Lin = {
-            href: string;
-            name: string;
-    }
 
     return (
-        <footer className='absolute bg-common-black bottom-0 w-full'>
+        <footer className='relative bg-common-black bottom-0 w-full'>
             <div className='min-[500px]:h-[26rem] max-[500px]:h-[21rem]'>
                 <div className='h-36 sm:h-40 md:h-48 bg-primary relative sm: -top-[30%] w-4/5 mx-auto py-4 md:py-12 flex flex-col justofy-center items-center gap-3 sm:gap-5 lg:gap-8 rounded-sm'>
                     <h2 className='text-lg sm:text-3xl font-semibold capitalize '>Our sponsors</h2>
@@ -33,8 +29,8 @@ export default function Footer() {
                     <div>
                         <h1 className='footer-header'>Pages</h1>
                         <ul className='logo-list '>
-                            {navLinks.map((link: { name: string; href: string }, index) => {
-                                return (index <= 4 && <Link key={link.name} href={link.href}>{link.name}</Link>
+                            {navLinks.map((link, index) => {
+                                return (index <= 4 && <Link key={link ? link.name : ''} href={link ? link.href : ""}>{link ? link.name : ''}</Link>
                                 )
                             })}
 
@@ -43,8 +39,8 @@ export default function Footer() {
                     <div>
                         <h1 className='footer-header'>Reach Us</h1>
                         <ul className='logo-list '>
-                            {navLinks.map((link: Lin, index) => {
-                                return (index > 4 && <Link key={link.name} href={link.href}>{link.name}</Link>
+                            {navLinks.map((link, index) => {
+                                return (index > 4 && <Link key={link?.name} href={link ? link.href : ''}>{link?.name}</Link>
                                 )
                             })}
                         </ul>
