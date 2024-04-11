@@ -15,7 +15,7 @@ export default function Header() {
     }
 
     return (
-        <header className='border-2 border-green-500 h-[4.5rem] flex justify-between items-center container fixed px-4 md:px-6 lg:px-10'>
+        <header className='bg-white z-50 border-2  h-[4.5rem] flex justify-between items-center w-full fixed px-4 md:px-6 lg:px-10'>
             <div>
                 <img src="./Logo.svg" alt="Finsweet logo" />
             </div>
@@ -36,8 +36,8 @@ export default function Header() {
                 <nav>
                     <ul className='ul-items flex'>
                         {navLinks.map((link) => {
-                            const isActive = pathname.startsWith(link.href)
-                            return <Link href={link.href} key={link.name} className={isActive ? 'text-primary' : 'black'}>{link.name}</Link>
+                            const isActive = pathname.startsWith(link ? link.href : '')
+                            return <Link href={link ? link.href : ''} key={link?.name} className={isActive ? 'text-primary' : 'black'}>{link?.name}</Link>
                         })}
                     </ul>
                 </nav>
