@@ -24,6 +24,9 @@ footer *{
 .logo-list a{
   @apply opacity-85 max-[500px]:text-xs
 }
+.btn{
+  @apply text-white antialiased tracking-wide text-sm lg:text-base font-bold py-2 px-3 lg:px-6 lg:py-3 bg-primary
+}
 }
 @layer utilities {
   .text-balance {
