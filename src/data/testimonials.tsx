@@ -3,19 +3,19 @@ export const testimonials = [
     {
         id: 0,
         fullName: 'Eve Madien',
-        image: '',
+        image: '/Testimonials/woman-wearing-hat-3310695.svg',
         stars: 5,
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget condimentum enim libero ultricies amet odio fringilla. Ut nibh morbi augue porta aliquet commodo. Fermentum auctor lacus eget in ut integer viverra sed. Penatibus tortor consequat.'
     }, {
         id: 1,
         fullName: 'Ash Benfred',
-        image: '',
+        image: '/Testimonials/man-in-black-leather-jacket-3748221.svg',
         stars: 4,
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget condimentum enim libero ultricies amet odio fringilla. '
     }, {
         id: 2,
         fullName: 'Ryan Smith',
-        image: '',
+        image: '/Testimonials/confident-albino-man-in-trendy-suit-5273717.svg',
         stars: 5,
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget condimentum enim libero ultricies amet odio fringilla. Ut nibh morbi augue porta aliquet commodo. Fermentum auctor lacus eget in ut integer viverra sed. Penatibus tortor consequat.'
     }, {
