@@ -1,3 +1,4 @@
+import ArticlesAndNews from "@/components/Home/ArticlesAndNews";
 import Brands from "@/components/Home/Brands";
 import HeaderH from "@/components/Home/Header";
 import HowItBegan from "@/components/Home/HowItBegan";
@@ -16,6 +17,7 @@ export default function Home() {
       <RecentEpisodes />
       <Testimonials />
       <Subscribe />
+      <ArticlesAndNews />
     </main>
   );
 }
