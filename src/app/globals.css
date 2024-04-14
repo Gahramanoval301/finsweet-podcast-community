@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer base {
+  .content{
+    @apply antialiased text-sm break-words lg:tracking-wide lg:leading-7;
+  }
+  .input-text{
+    @apply antialiased w-7/12 text-sm md:text-base bg-common-light placeholder:text-common-grey py-2 px-3 lg:py-3 lg:px-6 outline-none
+  }
+  .btn-next-input{
+    @apply text-white antialiased tracking-wide font-bold text-sm w-5/12 py-2 px-3 lg:px-6 lg:py-3
+  }
+  .head-text{
+    @apply text-xl font-bold sm:text-2xl lg:font-extrabold lg:text-3xl
+  }
   .ul-items {
     @apply flex gap-3 sm:gap-3 md:gap-5 xl:gap-12;
   }
@@ -29,6 +41,10 @@
   }
   .mic-lr-box {
     @apply rounded-[50%] bg-white flex justify-center items-center absolute;
+  }
+  /* ------------------REAL CSS----------------------- */
+  .dropdown-list{
+    box-shadow: 0 0 10px #503AE7;
   }
   .mic-lr-box::before {
     content: "+1";
