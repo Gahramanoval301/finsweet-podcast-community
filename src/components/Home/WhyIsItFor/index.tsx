@@ -4,10 +4,10 @@ export default function WhyIsItFor() {
     return (
         <section className='lg:py-32 sm:py-16 md:pl-8  pl-4 lg:pl-12  relative pb-10 py-10 grid grid-cols-1 sm:grid-cols-2 md:gap-12 gap-8  '>
             <div className='flex flex-col gap-6 justify-center relative'>
-                <h2 className='text-xl font-bold sm:text-2xl lg:font-extrabold lg:text-3xl'>
+                <h2 className='head-text'>
                     A podcast for makers and entrepreneurs
                 </h2>
-                <p className='antialiased text-sm break-words lg:tracking-wide lg:leading-7'>
+                <p className='content'>
                     Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
                 </p>
                 <img className='absolute -bottom-10 -left-5 md:-left-10 z-10' src="/Home/Line.svg" alt="green line" />
