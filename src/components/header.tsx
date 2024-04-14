@@ -6,30 +6,66 @@ import Link from 'next/link'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
+    const [dropdownHeight, setDropdownHeight] = useState(0);
     const isActive = null;
     const pathname = usePathname()
     function handleClick() {
         setIsOpen(!isOpen)
-        console.log(pathname);
+        setTimeout(() => {
+            setDropdownHeight(isOpen ? 0 : 500);
+        }, 100);
 
+    }
+    function handleClick2() {
+        setIsClicked(!isClicked)
     }
 
     return (
-        <header className='bg-white z-50 border-2  h-[4.5rem] flex justify-between items-center w-full fixed px-4 md:px-6 lg:px-10'>
+        <header className='  bg-white z-50 border-2  h-[4.5rem] flex justify-between items-center w-full fixed px-4 md:px-6 lg:px-10'>
             <div>
                 <img src="./Logo.svg" alt="Finsweet logo" />
             </div>
-            <div className='relative sm:hidden'>
-                <span className='cursor-pointer' onClick={handleClick}>Dropdown btn</span>
-                {isOpen &&
-                    <ul className='absolute divide-y-2 divide-primary w-full z-20 '>
-                        <li className='dropdown-item'><a href="">Podcasts</a></li>
-                        <li className='dropdown-item'><a href="">Host</a></li>
-                        <li className='dropdown-item'><a href="">About</a></li>
-                        <li className='dropdown-item'><a href="">Blog</a></li>
-                        <li className='dropdown-item'><a href="">Contact</a></li>
-                    </ul>
-                }
+            <div className='flex gap-4'>
+                <div className='relative sm:hidden border-2 '>
+                    <span className='cursor-pointer' onClick={handleClick}> btn</span>
+                    {isOpen &&
+                        <ul className='dropdown-list rounded-lg -translate-x-[70%] absolute divide-y-2 divide-primary z-20 flex flex-col gap-2 max-h-0 bg-white mt-2 w-32 transition-all duration-700 ' style={{ maxHeight: dropdownHeight }} >
+                            {navLinks.map((link) => {
+                                const isActive = pathname.startsWith(link ? link.href : '')
+                                return <Link href={link ? link.href : ''} key={link?.name} className={`${isActive ? 'text-primary' : 'black'} px-2 py-2 hover:text-secondary-basic hover:font-semibold transition`}>{link?.name}</Link>
+                            })}
+                        </ul>
+                    }
+                </div>
+                <div className='relative sm:hidden border-2 '>
+                    <span className='cursor-pointer' onClick={handleClick2}>btn</span>
+                    {
+                        // <ul className='dropdown-list rounded-lg -translate-x-[70%] absolute divide-y-2 divide-primary z-20 flex flex-col gap-2 max-h-0 bg-white mt-2 w-32 transition-all duration-700 ' style={{ maxHeight: dropdownHeight }} >
+                        <ul className='absolute flex flex-col items-center gap-2 mt-2 w-12 -translate-x-[20%] bg-common-light rounded-md p-2 translate duration-300' style={{
+                            opacity: isClicked ? 1 : 0,
+                            transform: `translateX(-20%) translateY(${isClicked ? '0' : '-20px'})`
+                        }}>
+                            <li>
+                                <Link href="">
+                                    <img src="/Facebook.svg" alt="Facebook" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="">
+                                    <img src="/LinkedIn.svg" alt="LinkedIn" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="">
+                                    <img src="/Instagram.svg" alt="Instagram" />
+                                </Link>
+                            </li>
+                        </ul>
+                        // </ul>
+                    }
+                </div>
+
             </div>
 
             <div className='sm:flex gap-5 md:gap-10 lg:gap-16 xl:gap-20 2xl:gap-28 hidden'>
@@ -45,19 +81,19 @@ export default function Header() {
                 <div>
                     <ul className='ul-items'>
                         <li>
-                            <a href="">
+                            <Link href="">
                                 <img src="/Facebook.svg" alt="Facebook" />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
+                            <Link href="">
                                 <img src="/LinkedIn.svg" alt="LinkedIn" />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
+                            <Link href="">
                                 <img src="/Instagram.svg" alt="Instagram" />
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
