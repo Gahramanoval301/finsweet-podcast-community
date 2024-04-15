@@ -7,13 +7,13 @@ export default function Subscribe() {
         <h2 className='text-white font-bold tracking-normal text-xl md:text-2xl lg:text-3xl md:font-extrabold md:tracking-wide max-[500px]:text-center'>Receive new episodes in your inbox.</h2>
         <div className='bg-secondary-basic  sm:w-5/12 '>
           <input className='input-text' type="text" id='email' name='email' placeholder='Enter Your Email' />
-          <button className='btn bg-secondary-basic btn-next-input'>Subscribe</button>
+          <button className='btn cursor-pointer bg-secondary-basic btn-next-input '>Subscribe</button>
         </div>
         <img src="/Home/Wave.svg" alt="Wave" className='absolute bottom-0' />
-        <div className='mic-l-box mic-lr-box lg:w-24 lg:h-24 md:w-16 md:h-16 w-12 h-12 left-3 max-[640px]:top-5 xl:left-[10%] '>
+        <div className='rotate-icon-box mic-l-box mic-lr-box lg:w-24 lg:h-24 md:w-16 md:h-16 w-12 h-12 left-3 max-[640px]:top-5 xl:left-[10%] '>
           <img src="/Home/Vector2.svg" alt="microphone-left" className='scale-[0.7] md:scale-[0.8] lg:scale-100' />
         </div>
-        <div className='mic-r-box mic-lr-box w-12 h-12 right-[10%] bottom-[30%] max-[640px]:bottom-5'>
+        <div className='rotate-icon-box mic-r-box mic-lr-box w-12 h-12 right-[10%] bottom-[30%] max-[640px]:bottom-5'>
           <img src="/Home/Vector3.svg" alt="microphone-right" />
         </div>
       </div>
