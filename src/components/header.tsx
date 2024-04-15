@@ -46,18 +46,18 @@ export default function Header() {
                             opacity: isClicked ? 1 : 0,
                             transform: `translateX(-20%) translateY(${isClicked ? '0' : '-20px'})`
                         }}>
-                            <li>
-                                <Link href="">
+                            <li className='sc-icon-box'>
+                                <Link href="" >
                                     <img src="/Facebook.svg" alt="Facebook" />
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="">
+                            <li className='sc-icon-box'>
+                                <Link href="" >
                                     <img src="/LinkedIn.svg" alt="LinkedIn" />
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="">
+                            <li className='sc-icon-box'>
+                                <Link href="" >
                                     <img src="/Instagram.svg" alt="Instagram" />
                                 </Link>
                             </li>
@@ -80,17 +80,17 @@ export default function Header() {
 
                 <div>
                     <ul className='ul-items'>
-                        <li>
+                        <li className='sc-icon-box'>
                             <Link href="">
                                 <img src="/Facebook.svg" alt="Facebook" />
                             </Link>
                         </li>
-                        <li>
+                        <li className='sc-icon-box'>
                             <Link href="">
                                 <img src="/LinkedIn.svg" alt="LinkedIn" />
                             </Link>
                         </li>
-                        <li>
+                        <li className='sc-icon-box'>
                             <Link href="">
                                 <img src="/Instagram.svg" alt="Instagram" />
                             </Link>
