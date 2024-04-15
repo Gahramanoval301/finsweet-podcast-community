@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import MiniSwiper from './MiniSwiper'
+import LogoSwiper from './LogoSwiper'
 import { navLinks } from '../data/navLinks'
 import Link from 'next/link'
 
@@ -11,8 +11,8 @@ export default function Footer() {
             <div className='min-[500px]:h-[26rem] max-[500px]:h-[21rem]'>
                 <div className='h-36 sm:h-40 md:h-48 bg-primary relative sm: -top-[30%] w-4/5 mx-auto py-4 md:py-12 flex flex-col justofy-center items-center gap-3 sm:gap-5 lg:gap-8 rounded-sm'>
                     <h2 className='text-lg sm:text-3xl font-semibold capitalize '>Our sponsors</h2>
-                    <div className='block sm:hidden'>
-                        <MiniSwiper />
+                    <div className='block sm:hidden w-[100%]'>
+                        <LogoSwiper />
                     </div>
                     <div className='hidden sm:grid sm:grid-cols-3 lg:grid-cols-5 opacity-80  place-items-center w-full'>
                         <img className='w-36' src="/footer/Logo1.svg" alt="Logo1" />
