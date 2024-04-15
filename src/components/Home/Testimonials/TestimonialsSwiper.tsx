@@ -20,10 +20,10 @@ export default function TestimonialSwiper() {
     return (
         <div className=' relative  '>
             <div className='gap-2 sm:gap-5  flex flex-row absolute z-50 right-0  -top-[35%]' >
-                <button ref={prevRef} className='w-8 h-8 sm:w-12 sm:h-12 rounded-[50%] bg-primary flex justify-center items-center'>
+                <button ref={prevRef} className='swiper-btn-box'>
                     <img src="/Testimonials/ArrowLeft.svg" alt="arrow-left" />
                 </button>
-                <button ref={nextRef} className=' w-8 h-8 sm:w-12 sm:h-12 rounded-[50%] bg-primary flex justify-center items-center'>
+                <button ref={nextRef} className='swiper-btn-box'>
                     <img src="/Testimonials/ArrowRight.svg" alt="arrow-right" />
                 </button>
             </div>
