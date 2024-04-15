@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  .content{
+  .content {
     @apply antialiased text-sm break-words lg:tracking-wide lg:leading-7;
   }
-  .input-text{
-    @apply antialiased w-7/12 text-sm md:text-base bg-common-light placeholder:text-common-grey py-2 px-3 lg:py-3 lg:px-6 outline-none
+  .input-text {
+    @apply antialiased w-7/12 text-sm md:text-base bg-common-light placeholder:text-common-grey py-2 px-3 lg:py-3 lg:px-6 outline-none;
   }
-  .btn-next-input{
-    @apply text-white antialiased tracking-wide font-bold text-sm w-5/12 py-2 px-3 lg:px-6 lg:py-3
+  .btn-next-input {
+    @apply text-white antialiased tracking-wide font-bold text-sm w-5/12 py-2 px-3 lg:px-6 lg:py-3;
   }
-  .head-text{
-    @apply text-xl font-bold sm:text-2xl lg:font-extrabold lg:text-3xl
+  .head-text {
+    @apply text-xl font-bold sm:text-2xl lg:font-extrabold lg:text-3xl;
   }
-  .section-space{
-    @apply py-10 xl:px-20 lg:px-10 md:px-8 
+  .section-space {
+    @apply py-10 xl:px-20 lg:px-10 md:px-8;
   }
   .ul-items {
     @apply flex gap-3 sm:gap-3 md:gap-5 xl:gap-12;
@@ -40,14 +40,42 @@
     @apply opacity-85 max-[500px]:text-xs;
   }
   .btn {
-    @apply text-white antialiased tracking-wide text-sm lg:text-base font-bold py-2 px-3 lg:px-6 lg:py-3 bg-primary;
+    @apply text-white antialiased tracking-wide text-sm lg:text-base font-bold py-2 px-3 lg:px-6 lg:py-3 relative bg-primary hover:bg-secondary-basic transition duration-[400ms] hover:shadow-xl;
   }
   .mic-lr-box {
     @apply rounded-[50%] bg-white flex justify-center items-center absolute;
   }
+  .swiper-btn-box{
+    @apply hover:bg-secondary-light transition duration-300 w-8 h-8 sm:w-12 sm:h-12 rounded-[50%] bg-primary flex justify-center items-center
+  }
   /* ------------------REAL CSS----------------------- */
-  .dropdown-list{
-    box-shadow: 0 0 10px #503AE7;
+  .sc-icon-box:hover img {
+    transition: all 500ms ease-in;
+  }
+  .sc-icon-box:hover img {
+    transform: rotateY(360deg);
+  }
+  .episode-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f4f2ff;
+    z-index: -1;
+    transition: 1s;
+  }
+  .episode-card:hover::before {
+    width: 100%;
+  }
+  .dropdown-list {
+    box-shadow: 0 0 10px #503ae7;
+  }
+
+  .rotate-icon-box:hover img{
+    transform: rotateY(180deg);
+    transition: all 500ms ease-in-out;
   }
   .mic-lr-box::before {
     content: "+1";
