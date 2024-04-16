@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WhyIsItFor() {
     return (
-        <section className='lg:py-32 sm:py-16 md:pl-8  pl-4 lg:pl-12  relative pb-10 py-10 grid grid-cols-1 sm:grid-cols-2 md:gap-12 gap-8  '>
+        <section className='lg:py-32 sm:py-16 md:pl-8  pl-4 lg:pl-12  relative pb-10 py-10 grid-box md:gap-12 gap-8  '>
             <div className='flex flex-col gap-6 justify-center relative'>
                 <h2 className='head-text'>
                     A podcast for makers and entrepreneurs

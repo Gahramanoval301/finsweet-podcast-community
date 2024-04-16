@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HowItBegan() {
   return (
-    <section className='lg:py-32 sm:py-16 relative pb-10 py-10 grid grid-cols-1 sm:grid-cols-2 gap-12 lg:gap-16  '>
+    <section className='lg:py-32 sm:py-16 relative pb-10 py-10 .grid-box gap-12 lg:gap-16  '>
         <div className='max-[640px]:-translate-x-10'>
           <img className='sm:scale-125 md:scale-110 ' src="/Home/Left.svg" alt="man-with-microphone-paper-pencil" />
         </div>
