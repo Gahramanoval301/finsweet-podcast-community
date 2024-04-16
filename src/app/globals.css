@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 @layer base {
+  /** HOST PAGE global css  */
+  .host-content-box {
+    @apply relative flex flex-col gap-5;
+  }
+  .grid-box {
+    @apply grid grid-cols-1 sm:grid-cols-2;
+  }
+  /* Achievement section */
+  .achievement-card {
+    @apply max-[640px]:w-[18.75rem] text-white flex flex-col justify-between gap-4 lg:gap-0 items-center bg-primary p-6 lg:p-10 lg:h-[25rem] xl:h-[30rem];
+  }
+  .achievement-count {
+    @apply text-3xl lg:text-[3rem] font-extrabold antialiased;
+  }
+  .achievement-header {
+    @apply antialiased leading-7 font-bold text-xl lg:text-2xl  tracking-wide;
+  }
+  .achievement-content-box {
+    @apply self-start flex flex-col gap-2;
+  }
+  /** HOME page global css/foote/header */
   .content {
     @apply antialiased text-sm break-words lg:tracking-wide lg:leading-7;
   }
@@ -45,8 +66,8 @@
   .mic-lr-box {
     @apply rounded-[50%] bg-white flex justify-center items-center absolute;
   }
-  .swiper-btn-box{
-    @apply hover:bg-secondary-light transition duration-300 w-8 h-8 sm:w-12 sm:h-12 rounded-[50%] bg-primary flex justify-center items-center
+  .swiper-btn-box {
+    @apply hover:bg-secondary-light transition duration-300 w-8 h-8 sm:w-12 sm:h-12 rounded-[50%] bg-primary flex justify-center items-center;
   }
   /* ------------------REAL CSS----------------------- */
   .sc-icon-box:hover img {
@@ -73,7 +94,7 @@
     box-shadow: 0 0 10px #503ae7;
   }
 
-  .rotate-icon-box:hover img{
+  .rotate-icon-box:hover img {
     transform: rotateY(180deg);
     transition: all 500ms ease-in-out;
   }
