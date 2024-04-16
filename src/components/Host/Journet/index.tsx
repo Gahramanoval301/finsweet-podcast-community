@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Journey() {
     return (
-        <section className='relative section-space  gap-8 md:gap-10 lg:gap-16 grid grid-cols-1 sm:grid-cols-2 '>
-            <div className='relative'>
+        <section className='grid-box relative section-space my-10 gap-8 md:gap-10 lg:gap-16  sm:p-8 md:p-14 lg:p-20'>
+            <div className='host-content-box'>
                 <h2 className='head-text'>
                     My origins on YouTube in 2008
                 </h2>
@@ -20,7 +20,7 @@ export default function Journey() {
                 </p>
 
             </div>
-            <div className='relative'>
+            <div className='host-content-box'>
                 <h2 className='head-text'>
                     From tech journalist, to Vlogger and YouTuber
                 </h2>
@@ -40,7 +40,7 @@ export default function Journey() {
                 </p>
 
             </div>
-            <img className='absolute bottom-0 left-20' src="/purplebLine.svg" alt="small bold purple line" />
+            <img className='absolute -bottom-5 sm:bottom-10 left-20' src="/purplebLine.svg" alt="small bold purple line" />
             <img className='absolute bottom-0 right-0' src="/purpleLine.svg" alt="long purple line" />
             <img className='absolute top-0 left-0' src="/greenLine.svg" alt="long green line" />
         </section>
