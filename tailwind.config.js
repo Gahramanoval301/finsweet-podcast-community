@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        "Host-CTA":"/Host/CTABackground.png"
+      },
       container:{
         center:true,
       },
