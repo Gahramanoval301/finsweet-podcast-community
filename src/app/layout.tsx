@@ -22,7 +22,7 @@ export default function RootLayout({
         <div className="">
           <Header />
         </div>
-        <main className=" translate-y-20 border-2 border-blue-700 px-4 relative z-10">
+        <main className=" translate-y-20  px-4 relative z-10">
           {children}
         </main>
         <Footer />
