@@ -3,15 +3,15 @@ import React from "react";
 
 export default function HeaderHost() {
   return (
-    <section className=" lg:py-26 sm:py-16 md:px-10 py-10 px-4 lg:px-20 gap-8 grid-box ">
+    <section className=" lg:py-26 sm:py-16 md:px-10 py-10 sm:px-4 lg:px-20 gap-8 grid-box ">
       <div className="relative flex justify-center sm:justify-end">
-        <Image src="/Host/Image.png" alt="man within microphone logo" />
-        <Image
-          className="absolute bottom-10 lg:bottom-[30%] left-5 lg:left-20"
+        <img src="/Host/Image.png" alt="man within microphone logo" />
+        <img
+          className="bsolute bottom-10 lg:bottom-[30%] left-5 lg:left-20"
           src="/greenbLine.svg"
           alt="small bold green line"
         />
-        <Image
+        <img
           className="absolute top-20 left-[10%] lg:left-[25%]"
           src="/purplebLine.svg"
           alt="small bold purple line"
@@ -29,7 +29,7 @@ export default function HeaderHost() {
           sky was a dead black, and the stars had ceased to twinkle.
         </p>
         <button className="btn">Know More</button>
-        <Image
+        <img
           className="absolute bottom-0 right-0"
           src="/greenLine.svg"
           alt="long green line"

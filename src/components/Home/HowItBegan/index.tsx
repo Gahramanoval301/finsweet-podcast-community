@@ -5,7 +5,7 @@ export default function HowItBegan() {
   return (
     <section className="lg:py-32 sm:py-16 relative pb-10 py-10 grid-box gap-12 lg:gap-16  ">
       <div className="max-[640px]:-translate-x-10">
-        <Image
+        <img
           className="sm:scale-125 md:scale-110"
           src="/Home/Left.svg"
           alt="man-with-microphone-paper-pencil"
@@ -24,12 +24,11 @@ export default function HowItBegan() {
           lacus tellus morbi viverra suspendisse ornare. Sit volutpat, volutpat
           ut netus malesuada enim penatibus non aliquet.
         </p>
-        <Image
+        <img
           className="right-10 bottom-0 sm:top-[10%] md:top-[20%] absolute"
           src="/Home/Line.svg"
           alt="Line"
         />
-        ]={" "}
       </div>
     </section>
   );

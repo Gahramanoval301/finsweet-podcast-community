@@ -10,26 +10,26 @@ export default function WhyIsItFor() {
           Apparently we had reached a great height in the atmosphere, for the
           sky was a dead black, and the stars had ceased to twinkle.
         </p>
-        <Image
+        <img
           className="absolute -bottom-10 -left-5 md:-left-10 z-10"
-          src={"/Home/Line.svg"}
+          src="/Home/Line.svg"
           alt="green line"
         />
-        <Image
+        <img
           className="absolute -top-20 sm:-top-5 md:top-2 right-3"
           src="/Home/Line2.svg"
           alt="purple line"
         />
-        <Image
+        <img
           className="absolute left-2  -top-10 sm:-top-20 lg:top-10"
-          src={"/Home/Line3.svg"}
+          src="/Home/Line3.svg"
           alt="small purple line"
         />
       </div>
       <div className="sm:scale-110 md:scale-100 bg-primary pl-10 translate-x-4 sm:translate-x-0 md:translate-x-4 ">
-        <Image
+        <img
           className="sm:scale-95 md:scale-90"
-          src={"/Home/max-with-microphone.svg"}
+          src="/Home/max-with-microphone.svg"
           alt="man-with-microphone"
         />
       </div>
